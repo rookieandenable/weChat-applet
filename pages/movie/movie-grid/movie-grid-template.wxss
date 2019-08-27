@@ -1,0 +1,11 @@
+@import '../movies/movies-template';
+
+.grid-container {
+  margin: 26rpx 0 20rpx 36rpx;
+  height: 1300rpx;
+}
+
+.movie-grid-container {
+  float: left;
+}
+

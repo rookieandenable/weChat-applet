@@ -1,0 +1,23 @@
+@import '../movieStart/movieStart-template';
+
+.movies-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.movies-inner-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+  margin-right: 40rpx;
+}
+
+.movies-img {
+ width: 196rpx;
+ height: 274rpx;
+ padding-bottom: 20rpx;  
+}
+
+.movies-title {
+
+}

@@ -1,0 +1,39 @@
+@import '../movies/movies-template';
+
+.movieList-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.movieList-inner-container {
+  margin: 0 auto;
+}
+
+.movies-template-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 22rpx;
+  margin-bottom: 22rpx;
+}
+
+ .more {
+  margin-right: 20rpx;
+  margin-top: -8rpx;
+ }
+
+ .more-title {
+ 
+ }
+
+.more-img {
+  width: 9rpx;
+  height: 16rpx;
+  margin-left: 16rpx;
+}

@@ -1,0 +1,24 @@
+<import src="movieList/movieList-template" />
+<import src="movie-grid/movie-grid-template" />
+
+<view class="search-container">
+  <icon class="icon-img" type="search" size="18"></icon>
+  <input value="{{textValue}}" placeholder-class="placeholder" type="text" placeholder="烟花剧场版2017，我要吃掉你的胰脏" bindfocus="onFocus" bindblur="onBlur" />
+  <icon bindtap="onCancel" class="icon-cancel" wx:if="{{isBlur}}" type="cancel" color="#b3b1b1"></icon>
+</view>
+
+<view class="container" wx:if="{{isFocus}}">
+  <view class="container-template">
+    <template is="movieList" data="{{...inTheaters}}" />
+  </view>
+  <view class="container-template">
+    <template is="movieList" data="{{...comingSoon}}" />
+  </view>
+  <view class="container-template">
+    <template is="movieList" data="{{...top250}}" />
+  </view>
+</view>
+
+<view wx:if="{{isBlur}}" class="moviesHideSearch">
+  <template is="movieGridTemplate" data="{{...searchMovies}}" />
+</view>

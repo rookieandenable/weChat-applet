@@ -1,0 +1,12 @@
+<template name="movieStart" data="{{...movie}}">
+  <view class="movieStart-container">
+    <view class="start-container">
+    <block wx:for="{{stars}}" wx:for-item="i" wx:key="1">
+    <image wx:if="{{i==1}}" src="/images/icon/star.png"></image>
+    <!-- <image wx:elif="{{i==2}}" src="/images/icon/half-star.png"></image> -->
+    <image wx:else src="/images/icon/none-star.png"></image>
+    </block>
+    </view>
+    <text class="start-num">{{average}}</text>
+  </view>
+</template>
